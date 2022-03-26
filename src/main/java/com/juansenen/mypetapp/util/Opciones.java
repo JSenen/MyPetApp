@@ -52,13 +52,13 @@ public class Opciones {
                     crearReceta();
                     break;
                 case "4":
-                    // Añadir metodo listarClientes();
+                    listarClientes();
                     break;
                 case "5":
-                   // Añadir metodo listarFacturas();
+                   listarFacturas();
                     break;
                 case "6":
-                    // Añadir metodo listarRecetas();
+                    listarRecetas();
                     break;
             }
 
@@ -148,6 +148,21 @@ public class Opciones {
         Recetas receta = new Recetas(nomVet, numCole, descripcion, fecha, dias, medicamento, dosis);
         recetas.add(receta);
     }
+    public void listarClientes() {
+        for (Clientes cliente : clientes) {
+            System.out.println(cliente.toString());
+        }
 
+    }
+    public void listarFacturas() {
+        for (Facturas factura : facturas) {
+            System.out.println(factura.toString());
+        }
+    }
+    public void listarRecetas() {
+        for (Recetas receta : recetas) {
+            System.out.println(receta.toString());
+        }
+    }
 
 }
