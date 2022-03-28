@@ -12,7 +12,7 @@ public class ClientesTest {
     private String nombre = "Antonio";
     private String nombre2 ="Ana";
     private String apellidos ="Alvarez Prueba";
-    private String apellidos2 = "Prueba Buena"
+    private String apellidos2 = "Prueba Buena";
     private float descuento = 0.5f;
 
     @Test
