@@ -10,12 +10,9 @@ public class ClientesTest {
 
     @Test
     public void crearClienteTest(){
-        //Invocamos constructor de la clase con unos parametros definidos para 2 Clientes
+        //Invocamos constructor de la clase con unos parametros definidos
         Clientes cliente = new Clientes("Antonio", "Alvarez Angustias", 0.5f);
-        Clientes cliente2 = new Clientes("Antonio", "Alvarez Angustias", 0.5f);
-        assertEquals(cliente2,cliente); //Comparamos que se tienen que haber creado
-        int id = cliente.getIdCliente();
-        assertEquals(1,1);
+        assertEquals(cliente,cliente); //Comparamos que se tienen que haber creado
     }
 
     @Test
