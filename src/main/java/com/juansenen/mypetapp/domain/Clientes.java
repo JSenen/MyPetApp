@@ -1,5 +1,7 @@
 package com.juansenen.mypetapp.domain;
 
+import java.util.Scanner;
+
 public class Clientes {
     private int idCliente;
     private static int contadorCliente;
@@ -18,6 +20,7 @@ public class Clientes {
         this.descuento = descuento;
 
     }
+
 
     public int getIdCliente() {
         return idCliente;
