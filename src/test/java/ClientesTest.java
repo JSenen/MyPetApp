@@ -8,19 +8,26 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ClientesTest {
 
+    //Creamos una serie de atributos para pruebas
+    private String nombre = "Antonio";
+    private String nombre2 ="Ana";
+    private String apellidos ="Alvarez Prueba";
+    private String apellidos2 = "Prueba Buena"
+    private float descuento = 0.5f;
+
     @Test
     public void crearClienteTest(){
         //Invocamos constructor de la clase con unos parametros definidos
-        Clientes cliente = new Clientes("Antonio", "Alvarez Angustias", 0.5f);
-        assertEquals(cliente,cliente); //Comparamos que se tienen que haber creado
+        Clientes cliente = new Clientes(nombre, apellidos, descuento);
+        assertEquals(cliente.getNombre(),cliente.getNombre()); //Comparamos que se tienen que haber creado y ser la misma
     }
 
     @Test
     public void crearIdClienteTest(){
-        Clientes cliente = new Clientes("Antonio", "Alvarez Angustias", 0.5f);
-        Clientes cliente2 = new Clientes("Antonio", "Alvarez Angustias", 0.5f);
+        Clientes cliente = new Clientes(nombre, apellidos, descuento);
+        Clientes cliente2 = new Clientes(nombre2, apellidos2, descuento);
 
-        int id = cliente2.getIdCliente();
+        int id = cliente2.getIdCliente(); //Obtenemos Id del cliente 2
         assertEquals(2,2); // Comparamos que se ha generado el id del 2 cliente
     }
     @Test
