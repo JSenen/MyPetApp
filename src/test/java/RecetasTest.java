@@ -1,9 +1,8 @@
 
+
 import com.juansenen.mypetapp.domain.Recetas;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotSame;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class RecetasTest {
@@ -21,8 +20,14 @@ public class RecetasTest {
         Recetas receta2 = new Recetas("Antonia", numColegiado, descripcion, fecha, numDias, medicamento, dosis);
         assertNotSame(receta2,receta); // Los 2 objetos creados deben ser diferentes
     }
-    @Test
-    public void listarRecetasTEst(){
 
+    @Test
+    public void listarRecetasTest(){
+        Recetas receta = new Recetas(nomVete, numColegiado, descripcion, fecha, numDias, medicamento, dosis); //Creamos un objeto
+        String toString = receta.toString(); //Lamamos al método toString() de la clase
+            /* Con este test probamos que el String empieza en "DESCRIPCION="
+            y no le sigue ningun número
+             */
+        assertFalse(toString.matches("NOMBRE VETERINARIO=[0-9]*?"));
     }
 }
