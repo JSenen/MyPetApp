@@ -2,7 +2,6 @@ import com.juansenen.mypetapp.domain.Facturas;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotSame;
 
 public class FacturasTest {
     private String concepto = "Prueba de prueba";
