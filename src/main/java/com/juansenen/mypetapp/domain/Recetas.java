@@ -100,7 +100,7 @@ public class Recetas {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("LISTADO RECETAS{");
-        sb.append("NOMBRE VETERINARIO='").append(nomVete).append('\'');
+        sb.append("NOMBRE VETERINARIO=").append(nomVete).append('\'');
         sb.append(", Nª COLEGIADO='").append(numColegiado).append('\'');
         sb.append(", DESCRIPCION='").append(descripcion).append('\'');
         sb.append(", FECHA='").append(fecha).append('\'');

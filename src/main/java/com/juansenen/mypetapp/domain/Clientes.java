@@ -58,7 +58,7 @@ public class Clientes {
     public String toString() {
         final StringBuilder sb = new StringBuilder("LISTADO CLIENTES{");
         sb.append("ID CLIENTE=").append(idCliente);
-        sb.append(", NOMBRE='").append(nombre).append('\'');
+        sb.append(", NOMBRE= ").append(nombre).append('\'');
         sb.append(", APELLIDOS='").append(apellidos).append('\'');
         sb.append(", DESCUENTO A APLICAR=").append(descuento);
         sb.append('}');
