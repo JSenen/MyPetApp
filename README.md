@@ -35,7 +35,7 @@ Se ha creado una sencilla aplicación de consola para la gestión de las visitas
 Desde ella, en la recepción de puede ir añadiendo los clientes que reciben, con o sin mascota.
 También se podra generar una receta o la factura a aplicar.
 
-###GIT:
+### GIT:
 Tras la creación de un nuevo repositorio en **github** , se ha gestionado el mismo por medio de
 la creación y corpatición de ramas con el uso de **git-flow** para llevar el control sobre diferentes
 etapas de creación.
@@ -46,12 +46,12 @@ Se han crreado durante el proyecto las siguientes ramas:
 + **feature/ListarObjetos**: rama para la creación de la función de listado de objetos.
 + **release** : Rama para el lanzamiento de la aplicación.
 
-###GITHUB PAGES
+### GITHUB PAGES
 Para finalizar el proyecto se creará una página en **git-pages**
-+ jsenen.github.io
++ Jsenen.github.io/MyPetApp/
 
 
-###Clases:
+### Clases:
 + **Clientes** -> Para la creación de los Clientes. Desde esta se puede pasar a la clase Mascota para añadirla al cliente
 + **Mascotas** -> Para la creación de Mascotas
 + **Recetas** -> Para la creación de Recetas
@@ -59,22 +59,22 @@ Para finalizar el proyecto se creará una página en **git-pages**
 + **Opciones** -> Clase donde se encuentra el menú principal de opciones
 + **MyPetApp** -> Ejecutor principal de la aplicación, desde donde se generan las opciones
 
-###Métodos:
+### Métodos:
 + Todas las clases disponen de los métodos Getter and Setters correspondientes para la extraciión y edición de datos. Así como del correspondiente método toString() para generación de listados.
 
-###Test:
+### Test:
 Dentro del directorio **src** encontramos la carpeta **test** con una clase de cada tipo y los correspondientes test JUnit.
 
-###MAVEN:
+### MAVEN:
 Se ha configurado Maven con los plugin y dependencias necesariós para gestionar el ciclo de vida del proyecto.
 
-###JENKINS:
+### JENKINS:
 Se ha configurado Jenkins desde una máquina virtual Docker para automatizar los procesos de validación, compilado, test y empaquetado del proyecto.
 
-###SONAQUBE:
+### SONAQUBE:
 Se ha configurado SonarQube desde una máquina virtual Docker para automatizar desde Jenkins y poder comprobar la calidad del proyecto
 
-###VisualVM:
+### VisualVM:
 Se ha instalado VisualVM, así como su correspondiente plugin del IDE IntelliJ para comprobar los recursos que usa la aplicación Java.
 
 
