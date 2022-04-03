@@ -46,7 +46,10 @@ Se han crreado durante el proyecto las siguientes ramas:
 + **feature/ListarObjetos**: rama para la creación de la función de listado de objetos.
 + **release** : Rama para el lanzamiento de la aplicación.
 
+###GITHUB PAGES
 Para finalizar el proyecto se creará una página en **git-pages**
++ jsenen.github.io
+
 
 ###Clases:
 + **Clientes** -> Para la creación de los Clientes. Desde esta se puede pasar a la clase Mascota para añadirla al cliente
