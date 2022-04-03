@@ -5,8 +5,8 @@ import com.juansenen.mypetapp.util.Opciones;
 
 public class MyPetApp {
     public static void main(String[] args) {
-
-    Opciones opciones = new Opciones();
-    opciones.mostrarOpciones();
+        //Creamos el menu principal de la app con un nuevo obejo Opciones
+        Opciones opciones = new Opciones();
+        opciones.mostrarOpciones();
     }
 }
