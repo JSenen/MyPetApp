@@ -36,7 +36,8 @@ Desde ella, en la recepción de puede ir añadiendo los clientes que reciben, co
 También se podra generar una receta o la factura a aplicar.
 
 ###GIT:
-Durante el recorrido del proyecto, se han ido creando ramas por medio de **git-flow** para llevar el control sobre diferentes
+Tras la creación de un nuevo repositorio en **github** , se ha gestionado el mismo por medio de
+la creación y corpatición de ramas con el uso de **git-flow** para llevar el control sobre diferentes
 etapas de creación.
 Se han crreado durante el proyecto las siguientes ramas:
 + **Main** : rama principal
@@ -44,6 +45,8 @@ Se han crreado durante el proyecto las siguientes ramas:
 + **feature/CrearObjetos**: rama para la creación de la función de crear objetos desde las clases
 + **feature/ListarObjetos**: rama para la creación de la función de listado de objetos.
 + **release** : Rama para el lanzamiento de la aplicación.
+
+Para finalizar el proyecto se creará una página en **git-pages**
 
 ###Clases:
 + **Clientes** -> Para la creación de los Clientes. Desde esta se puede pasar a la clase Mascota para añadirla al cliente
