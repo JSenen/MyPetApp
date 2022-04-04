@@ -13,6 +13,10 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <sonar.host.url>https://xxx.com/sonar</sonar.host.url>
+        <!-- Nombre de usuario y contraseña con permisos de análisis de ejecución -->
+        <sonar.login>admin</sonar.login>
+        <sonar.password>bitnami</sonar.password>
     </properties>
 
     <dependencies>
