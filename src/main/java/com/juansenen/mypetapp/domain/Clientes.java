@@ -1,6 +1,5 @@
 package com.juansenen.mypetapp.domain;
 
-import java.util.Scanner;
 
 public class Clientes {
     private int idCliente;

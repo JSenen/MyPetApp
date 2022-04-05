@@ -14,7 +14,7 @@ public class Opciones {
     private List<Clientes> clientes;
     private List<Mascotas> mascotas;
     private List<Facturas> facturas;
-    private List<Recetas> recetas; //TODO añadir a diagrama de clases
+    private List<Recetas> recetas;
     private Scanner teclado;
 
     public Opciones() {
@@ -65,6 +65,7 @@ public class Opciones {
         } while (!seleccion.equalsIgnoreCase("s"));
     }
 
+    //Metodo para llamar al objeto clinente y crear uno nuevo
     public void crearCliente() {
 
         System.out.println("Nombre: ");
@@ -81,12 +82,14 @@ public class Opciones {
         System.out.println("Quiere añadir una mascota (s/n): ");
         opcion = teclado.next();
         if (opcion.equalsIgnoreCase("s")){
+            //En caso de crear añadir mascota  al cliente llamaremos al metodo crearMascota()
             crearMascota();
         }else{
             System.out.println("CLIENTE AÑADIDO");
         }
     }
 
+    //Metodo para llamar al objeto mascota y crear una nueva
     public void crearMascota(){
         do{
             System.out.println("*** AÑADIR MASCOTA ***");
@@ -112,6 +115,7 @@ public class Opciones {
 
     }
 
+    //Metodo para crear un objeto nuevo factura
     public void crearFactura() {
         facturas = new ArrayList<>();
 
@@ -128,6 +132,7 @@ public class Opciones {
         facturas.add(factura);
     }
 
+    //Metodo para crear un objeto nuevo Receta
     public void crearReceta() {
 
         System.out.println("Veterinario atendio: ");
@@ -148,17 +153,21 @@ public class Opciones {
         Recetas receta = new Recetas(nomVet, numCole, descripcion, fecha, dias, medicamento, dosis);
         recetas.add(receta);
     }
+
+    //Metodo llama a toString() de la clase Cliente para generar los clientes añadidos
     public void listarClientes() {
         for (Clientes cliente : clientes) {
             System.out.println(cliente.toString());
         }
 
     }
+    //Metodo llama a toString() de la clase Facturas para generar las facturas añadidos
     public void listarFacturas() {
         for (Facturas factura : facturas) {
             System.out.println(factura.toString());
         }
     }
+    //Metodo llama a toString() de la clase Receta para generar las recetas añadidos
     public void listarRecetas() {
         for (Recetas receta : recetas) {
             System.out.println(receta.toString());
